@@ -1,0 +1,405 @@
+<!-- C:\Users\Alex\Documents\research\khipu>python -m http.server -->
+<!-- http://localhost:8000/ -->
+<html>
+<body style="color:#F4FFE4;background:#625759">
+<div id="regionSelect" style="overflow-y:scroll;height:30%;display:inline-flex">
+	<table style="border: 1px solid black; border-radius: .2em">
+		<tr><td style="text-align:center; border: 1px solid #F4FFE4;font-size:120%">REGION</td></tr>
+		<!-- <tr><td><input type='checkbox' name='regionCheck' value=''></td></tr> -->
+		<tr><td><input type='checkbox' name='regionCheck' value='Central Coast, Peru'>Central Coast, Peru</td></tr>
+		<tr><td><input type='checkbox' name='regionCheck' value='Puruchuco'>Puruchuco</td></tr>
+		<tr><td><input type='checkbox' name='regionCheck' value='Chachapoyas'>Chachapoyas</td></tr>
+		<tr><td><input type='checkbox' name='regionCheck' value='South Coast, Peru'>South Coast, Peru</td></tr>
+		<tr><td><input type='checkbox' name='regionCheck' value='Inka, Late Horizon'>Inka, Late Horizon</td></tr>
+		<tr><td><input type='checkbox' name='regionCheck' value='unknown'>unknown</td></tr>
+		<tr><td><input type='checkbox' name='regionCheck' value='NULL'>NULL</td></tr>
+		<tr><td><input type='checkbox' name='regionCheck' value='Nazca'>Nazca</td></tr>
+		<tr><td><input type='checkbox' name='regionCheck' value='near Lima'>near Lima</td></tr>
+		<tr><td><input type='checkbox' name='regionCheck' value='North-Central Coast, Peru'>North-Central Coast, Peru</td></tr>
+		<tr><td><input type='checkbox' name='regionCheck' value='Valle de Lurin'>Valle de Lurin</td></tr>
+		<tr><td><input type='checkbox' name='regionCheck' value='Inka, Playa Miller'>Inka, Playa Miller</td></tr>
+	</table>
+	<table style="border: 1px solid black; border-radius: .2em">
+		<tr style="text-align:center"><td style="text-align:center; border: 1px solid #F4FFE4;font-size:120%">PROVENANCE</td></tr>
+		<!-- <tr><td><input type='checkbox' name='provenanceCheck' value=''></td></tr> -->
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Pachacamac'>Pachacamac</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Ica'>Ica</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Unknown'>Unknown</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Leymebamba'>Leymebamba</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Huaquerones'>Huaquerones</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Nazca'>Nazca</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Hacienda Ullujalla y Callengo'>Hacienda Ullujalla y Callengo</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Valle de Ica Hacienda Callango Ocucaje'>Valle de Ica Hacienda Callango Ocucaje</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Between Ica and Pisco'>Between Ica and Pisco</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Paracas'>Paracas</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='near Lima'>near Lima</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Marquez'>Marquez</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Santa'>Santa</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Huacho'>Huacho</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Atarco'>Atarco</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Chancay, Central Coast'>Chancay, Central Coast</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Lluta Valley'>Lluta Valley</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Peru'>Peru</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Playa Miller #6, Arica, Chile'>Playa Miller #6, Arica, Chile</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Cajamarquilla'>Cajamarquilla</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Tambo Colorado'>Tambo Colorado</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Chuquitanta'>Chuquitanta</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Ocucaje'>Ocucaje</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Ica/Pisco'>Ica/Pisco</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Pueblo Libre, Lima, Peru'>Pueblo Libre, Lima, Peru</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Huaca Perez, Lima (a.k.a Hda. Infantas and Tambo Inca)'>Huaca Perez, Lima (a.k.a Hda. Infantas and Tambo Inca)</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Pisco'>Pisco</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Costa Sur'>Costa Sur</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Ica Valley, near Callango'>Ica Valley, near Callango</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Huaura Valley, near Lima, on Santa Rosalia Hacienda'>Huaura Valley, near Lima, on Santa Rosalia Hacienda</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Cieneguilla, Valle de Lurin'>Cieneguilla, Valle de Lurin</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Ullujaya, Ocucaje, Ica'>Ullujaya, Ocucaje, Ica</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='La puntilla, between Paracas and Pisco'>La puntilla, between Paracas and Pisco</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Aankoop'>Aankoop</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Huando, Chancay, Peru (Gaffron Collection)'>Huando, Chancay, Peru (Gaffron Collection)</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Maranga, Huaca 1'>Maranga, Huaca 1</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Valle de Pisco'>Valle de Pisco</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Peru, Fundort: Pachacmac'>Peru, Fundort: Pachacmac</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Acari'>Acari</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Hda. Huando, Chancay'>Hda. Huando, Chancay</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Costa Central, Huacho'>Costa Central, Huacho</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Huari'>Huari</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Santa Clara, Nazca'>Santa Clara, Nazca</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Lima'>Lima</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Hacienda Copara, Nazca'>Hacienda Copara, Nazca</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Mollepampa'>Mollepampa</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Dontation from the collection Belli'>Dontation from the collection Belli</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='probably Central Coast Late Period'>probably Central Coast Late Period</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='Cuzco'>Cuzco</td></tr>
+		<tr><td><input type='checkbox' name='provenanceCheck' value='La Molina'>La Molina</td></tr>
+	</table>
+		<table style="border: 1px solid black; border-radius: .2em">
+		<tr style="text-align:center"><td style="text-align:center; border: 1px solid #F4FFE4;font-size:120%">URTON KHIPU TYPE</td></tr>
+		<!-- <tr><td><input type='checkbox' name='regionCheck' value=''></td></tr> -->
+		<tr><td><input type='checkbox' name='typeCheck' value='DECIMAL_NUM'>DECIMAL_NUM</td></tr>
+		<tr><td><input type='checkbox' name='typeCheck' value='CENSUS'>CENSUS</td></tr>
+		<tr><td><input type='checkbox' name='typeCheck' value='ANOMALOUS'>ANOMALOUS</td></tr>
+		<tr><td><input type='checkbox' name='typeCheck' value='POSITIONAL'>POSITIONAL</td></tr>
+		<tr><td><input type='checkbox' name='typeCheck' value='BANDED'>BANDED</td></tr>
+		<tr><td><input type='checkbox' name='typeCheck' value='SERIATED'>SERIATED</td></tr>
+		<tr><td><input type='checkbox' name='typeCheck' value='SUMMING_INTERNAL'>SUMMING_INTERNAL</td></tr>
+		<tr><td><input type='checkbox' name='typeCheck' value='MATCHING_INTERNAL'>MATCHING_INTERNAL</td></tr>
+		<tr><td><input type='checkbox' name='typeCheck' value='LARGE_VALUES'>LARGE_VALUES</td></tr>
+	</table>
+</div>
+<!-- <hr> -->
+<!-- <input id="query" value="select * from cord limit 10;"></input> -->
+<div style="position:relative;top:1em;display:inline-flex">
+<button id="displayButt" style="font-size:200%;border-radius:.3em;background: #eedfcc;" onclick="ajaxFunction()">DISPLAY</button>
+</div>
+<!-- <div id="resultDiv">
+	select urton_khipu_type.INVESTIGATOR_NUM as UID, khipu_main.NICKNAME, CORD_COUNT, khipu_main.REGION, khipu_main.PROVENANCE, x.CORD_ID, PENDANT_FROM as PARENT, cord.cord_classification as CLASS, x.VALUE, x.KNOTS, FULL_COLOR as COLOR, TWIST, FIBER, TERMINATION, ATTACHMENT_TYPE as ATTACHMENT, CORD_LENGTH as LENGTH, DECIMAL_NUM, CENSUS, ANOMALOUS, POSITIONAL, BANDED, SERIATED, SUMMING_INTERNAL, MATCHING_INTERNAL, LARGE_VALUES from (select * from (select CORD_ID as CID, sum(KNOT_VALUE_DECIMAL) as VALUE, GROUP_CONCAT(DIRECTION, TYPE_CODE, KNOT_VALUE_DECIMAL ORDER BY KNOT_ID) AS KNOTS from KNOT GROUP BY CORD_ID) as a RIGHT JOIN (select CORD_ID from cord group by CORD_ID) as b ON CID=b.CORD_ID) as x, (select KHIPU_ID, count(*) as CORD_COUNT from cord group by KHIPU_ID) as counts, ascher_cord_color, cord, khipu_main, urton_khipu_type where x.CORD_ID = ascher_cord_color.CORD_ID and x.CORD_ID = cord.CORD_ID and cord.KHIPU_ID = khipu_main.KHIPU_ID and cord.KHIPU_ID = counts.KHIPU_ID and khipu_main.KHIPU_ID = urton_khipu_type.KHIPU_ID limit 815;
+</div> -->
+<hr>
+<div id='phylogram' style="background-color:rgb(124,194,250);background: linear-gradient(to right, rgb(124,194,250), rgb(144,174,200));background: -moz-linear-gradient(right, rgb(124,194,250), rgb(144,174,200));background: -o-linear-gradient(right, rgb(124,194,250), rgb(144,174,200));background: -webkit-linear-gradient(left, rgb(124,194,250), rgb(144,174,200));"></div> <!-- 144,144,200 -->
+<hr>
+<div>Contact: <a style="color:#fff" href="braylan@cs.utexas.edu">braylan@cs.utexas.edu</a></div>
+</body>
+<script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+<script src="d3.phylogram.js" type="text/javascript"></script>
+<script src="dicts.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var local = "http://localhost:8000/"
+	function ajaxFunction() {
+		console.log("sending request")
+		document.getElementById('displayButt').onclick = '';
+
+		var ajaxRequest;
+
+		var khipus;
+
+		try {
+			// Opera 8.0+, Firefox, Safari
+			ajaxRequest = new XMLHttpRequest();
+			}catch (e) {
+			// Internet Explorer Browsers
+			try {
+				ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+			}catch (e) {
+				try{
+					ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+				}catch (e){
+			    // Something went wrong
+			    alert("Your browser broke!");
+			    return false;
+				}
+			}
+		}
+
+		ajaxRequest.onreadystatechange = function(){
+			if(ajaxRequest.readyState == 4){
+				document.getElementById('displayButt').onclick = ajaxFunction;
+				var response = ajaxRequest.response.replace(/\;/, "");
+				try {
+					var retObj = JSON.parse(response);
+					khipus = createKhipuTree(retObj);
+					//console.log(retObj);
+					//console.log(khipus);
+					var khipusK = Object.keys(khipus);
+					// var chosenKhipu = khipus[khipusK[khipusK.length-1]];
+					// console.log(chosenKhipu);
+					for (var i = 0; i < khipusK.length; i++) {
+						var chosenKhipu = khipus[khipusK[i]];
+						drawKhipu(chosenKhipu);
+					}
+				} catch(e) {
+					console.log(e);
+					console.log(response);
+				}
+			}
+		}
+
+		ajaxRequest.onerror= function(e) {
+			console.log(e);
+		};
+
+		ajaxRequest.onload = function() {
+			console.log("loaded")
+		}
+
+		ajaxRequest.open("POST", "request.php", true);
+		ajaxRequest.send(applyFilters());
+
+		function addChild(parentCord, childCord) {
+			if (!parentCord.children) parentCord.children = [];
+			parentCord.children.push(childCord);
+		}
+
+		function countChildren(khipu) {
+			if (!khipu.children) return 0;
+			var sum = 0;
+			for (var i = 0; i < khipu.children.length; i++) sum += 1 + countChildren(khipu.children[i]);
+			return sum;
+		}
+ 
+		function createKhipuTree(cleanCordArray) {
+			var rootKhipus = {};
+			var cordMap = {};
+			for (var i = 0; i < cleanCordArray.length; i++) {
+				var cord = cleanCordArray[i];
+				cordMap[cord.CORD_ID] = cord;
+				cord.length = cord.LENGTH;
+			}
+			for (var i = 0; i < cleanCordArray.length; i++) {
+				var cord = cleanCordArray[i];
+				var parentID = cord.PARENT;
+				var parent = cordMap[parentID] || rootKhipus[parentID];
+				if (!parent) {
+					parent = {uid:cord.UID, khipuID:parentID, cordCount: cord.CORD_COUNT};
+					if (parentID < 3000000) rootKhipus[parentID] = parent;
+				}
+				addChild(parent, cord)
+			}
+			// TODO check all children are loaded (otherwise have a partial khipu which looks weird)
+			for (var id in rootKhipus) {
+				var khipu = rootKhipus[id];
+				if (khipu.cordCount != countChildren(khipu)) delete rootKhipus[id];
+			}
+			return rootKhipus;
+		}
+	}
+
+	function applyFilters() {
+		var result = ["and "];
+		var rc = selectChecks("regionCheck", "REGION");
+		var pc = selectChecks("provenanceCheck", "KHIPU_MAIN.PROVENANCE");
+		var tc = selectChecks("typeCheck");
+		if (rc.length > 3) result.push(rc);
+		if (pc.length > 3) {
+			if (result.length > 1) result.push('and ');
+			result.push(pc);
+		}
+		if (tc.length > 3) {
+			if (result.length > 1) result.push('and ');
+			result.push(tc);
+		}
+		return result.length > 1 ? result.join('') : "";
+	}
+
+	function selectChecks(checkBoxName, fieldName) {
+		var inputs = document.getElementsByName(checkBoxName)
+		var result = "(";
+		for (var i = 0; i < inputs.length; i++) {
+			var checkbox = inputs[i];
+			if (checkbox.checked) {
+				if (result.length > 1) result += " or ";
+				if (fieldName) result += fieldName + ' like "%' + checkbox.value + '%"';
+				else result += checkbox.value + ' = ' + 1;
+			}
+		}
+		result += ") ";
+		return result;
+	}
+
+	var size = 4;
+
+	var svg = d3.select("body").append("svg");
+	svg.append('defs');
+
+	var fillPatterns = {};
+	function createFillPattern(id, col1, col2, angleDegrees) {
+		var fillPattern = svg.append('pattern')
+		.attr('id', id)
+		.attr('patternUnits', 'userSpaceOnUse')
+		.attr('width', size)
+		.attr('height', size)
+		.attr("patternTransform", "rotate(" + angleDegrees + ")");
+
+		var gradient = svg.append("defs")
+		.append("linearGradient")
+		.attr("id", id + "gradient")
+		.attr("x1", "0%")
+		.attr("y1", "0%")
+		.attr("x2", "100%")
+		.attr("y2", "0%")
+		.attr("spreadMethod", "pad");
+
+		gradient.append("stop")
+		.attr("offset", "40%")
+		.attr("stop-color", col1)
+		.attr("stop-opacity", 1);
+
+		gradient.append("stop")
+		.attr("offset", "60%")
+		.attr("stop-color", col2)
+		.attr("stop-opacity", 1);
+
+		fillPattern.append("rect")
+		.attr("height", size*2)
+		.attr("width", size)
+		.style("fill", "url(#" + id + "gradient)");
+
+		fillPatterns[id] = fillPattern;
+	}
+
+	function dec2hec(x) {
+		return x.toString(16).substring(2,4);
+	}
+	function dexCol2HexCol(color) {
+		colorRGB = colors['c'+color];
+		if (!colorRGB) return '#fff';
+		return "#" + dec2hec(colorRGB[0]) + dec2hec(colorRGB[1]) + dec2hec(colorRGB[2]);
+	}
+
+	function colorTextParse(cordColor) {
+		return cordColor.replace(/\*_|\:|\%|\*+/g, '-').replace(/ /g, '');
+	}
+
+	function getPattern(cord) {
+		var twist = cord.TWIST === "Z" || cord.TWIST === "S" ? cord.TWIST : 'U';
+		var colorV = colorTextParse(cord.COLOR).split('-');
+		var color1 = colorV[0];
+		var color1H = dexCol2HexCol(color1);
+		var color2H = color1H;
+		var id = color1;
+		if (colorV.length > 1) {
+			var color2 = colorV[1];
+			id += "-" + color2;
+			color2H = dexCol2HexCol(color2);
+		}
+		id += "/" + twist;
+
+		if (!fillPatterns[id]) {
+			createFillPattern(id,color1H,color2H,twist=="S"?45:(twist=="Z"?135:0));
+		}
+
+		return id;
+	}
+
+	function getKnotPositions(cord) {
+		if (!cord.KNOTS) return [];
+		var n = cord.KNOTS.split(",").length;
+		var result = [];
+		for (var i = 0.0; i < n; i++) result.push((i+1)/(n+1));
+		return result;
+	}
+
+	function getKnotValues(cord) {
+		if (!cord.KNOTS) return [];
+		var v = cord.KNOTS.split(",");
+		return v;
+	}
+
+	var WIDTH = 800;
+
+	function drawKhipu(khipu) {
+		d3.phylogram.build('#phylogram', khipu, {
+			width: WIDTH,
+			height: 400 * khipu.cordCount / 30,
+			children: function(n) {return n.children;},
+			nodeTypeFn: function(n) {
+				if (n.depth == 0) {
+					return "root node";
+				} else {
+					return "leaf node";
+				}
+			},
+			linkStroke: function(d) {
+				return("url(#" + getPattern(d.target) + ")");
+			},
+			skipLabels: true,
+			textFn: function(vis, yscale) {
+				var nodes = vis.selectAll('g.leaf.node')[0];
+				for (var h = 0; h < nodes.length; h++) {
+					var node = nodes[h];
+					var n = node['__data__'];
+					var poses = getKnotPositions(n);
+					var values = getKnotValues(n);
+					for (var i = 0; i < poses.length; i++) {
+						var pos = poses[i];
+						var v = values[i];
+						var dir = v.substring(0,1) === "S";
+						var val = v.substring(1,5);
+						var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+						node.appendChild(text);
+						text.setAttribute("dx", -yscale(n.LENGTH * (1.0 - pos)))
+						text.setAttribute("dy", dir?3:4)
+						text.setAttribute("text-anchor", "start")
+						text.setAttribute('font-family', 'Helvetica Neue, Helvetica, sans-serif')
+						text.setAttribute('font-size', '10px')
+						text.setAttribute('fill', 'black')
+						text.setAttribute('rotate',dir?'15':'-15')
+						text.textContent = val;
+					}
+				}
+				vis.append("svg:text")
+				.attr("dx", WIDTH + 50)
+				.attr("dy", 25)
+				.attr("text-anchor", "start")
+				.attr('font-family', 'Helvetica Neue, Helvetica, sans-serif')
+				.attr('font-size', '30px')
+				.attr('fill', 'black')
+				.text(khipu.uid);
+			},
+			styleTreeNodesFn: function(vis) {
+				vis.selectAll('g.leaf.node')
+				.append("svg:text")//svg:circle
+				// .attr("r", 4.5)
+				// .attr('stroke',  'yellowGreen')
+				.attr('fill', function(d) {
+					var colorV = colorTextParse(d.COLOR).split('-');
+					var color1 = colorV[0];
+					return dexCol2HexCol(color1);
+				})
+				.attr('stroke-width', '2px')
+				.attr("text-anchor", 'start')
+				.attr('font-family', 'Helvetica Neue, Helvetica, sans-serif')
+				.attr('font-weight', 'bold')
+				.attr("dx", -3)
+				.attr("dy", 6)
+				.text(function(d) {return d.TERMINATION});
+			},
+			// linkFill: function(d) {
+			// 	return(d.target.TERMINATION=="K" ? "#faa" : "#afa")
+			// },
+			// skipTicks: true,
+			other: null
+		});
+	}
+</script>
+</html>
